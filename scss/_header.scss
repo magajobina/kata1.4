@@ -1,0 +1,32 @@
+.header {
+  background: #fff;
+  border-bottom: #D9FFF5 1px solid;
+  
+  @media (min-width: 1120px) {
+    display: none;
+  }
+  
+  &__inner {
+    min-height: 88px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+  }
+
+  &__block {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+}
+.divider-vertical {
+  height: 32px;
+  width: 2px;
+  margin: 0 2px;
+  background: #EAEAEA;
+  border-radius: 1px;
+}
+.header__logo-link {
+  margin-right: auto;
+}

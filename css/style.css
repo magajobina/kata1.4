@@ -1,0 +1,239 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+  background-color: transparent;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+a {
+  color: inherit;
+}
+
+@font-face {
+  font-family: "TT Lakes";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/TTLakes-Regular.woff2") format("woff2"), url("../fonts/TTLakes-Regular.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "TT Lakes";
+  font-weight: 500;
+  font-style: normal;
+  src: url("../fonts/TTLakes-Medium.woff2") format("woff2"), url("../fonts/TTLakes-Medium.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "TT Lakes";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/TTLakes-Bold.woff2") format("woff2"), url("../fonts/TTLakes-Bold.woff") format("woff");
+  font-display: swap;
+}
+body {
+  font-family: "TT Lakes", sans-serif;
+  background: #F8F8F8;
+  color: #1B1C21;
+  font-size: 16px;
+}
+
+.wrapper {
+  min-height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.container {
+  padding: 0 16px;
+  margin: 0 auto;
+  height: 100%;
+}
+@media (min-width: 768px) {
+  .container {
+    padding: 0 24px;
+  }
+}
+@media (min-width: 1120px) {
+  .container {
+    padding: 0 32px;
+  }
+}
+
+.button-rounded {
+  border-radius: 50%;
+}
+
+.mobile-hidden {
+  display: none;
+}
+@media (min-width: 768px) {
+  .mobile-hidden {
+    display: block;
+  }
+}
+
+.mobile-tablet-hidden {
+  display: none;
+}
+@media (min-width: 1120px) {
+  .mobile-tablet-hidden {
+    display: block;
+  }
+}
+
+button {
+  transition: opacity 0.2s;
+}
+button:hover {
+  opacity: 0.75;
+}
+
+.mod-menu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background: #fff;
+  box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2), -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
+}
+.mod-menu__inner {
+  min-width: 320px;
+  padding-top: 20px;
+  padding-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.mod-menu__head {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 0 24px;
+}
+.mod-menu__logo {
+  margin-right: auto;
+}
+.mod-menu__menu {
+  display: grid;
+  gap: 24px;
+  margin-top: 45px;
+}
+.mod-menu__link {
+  position: relative;
+  display: block;
+  padding-left: 24px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: -0.2px;
+}
+.mod-menu__link--active {
+  color: #7E7E82;
+}
+.mod-menu__link--active::before {
+  content: "";
+  position: absolute;
+  left: -4px;
+  display: block;
+  height: 100%;
+  width: 8px;
+  border-radius: 20px;
+  background-color: #41F6D7;
+}
+.mod-menu__bottom {
+  padding: 0 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.mod-menu__list {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.mod-menu__mail {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5em;
+  letter-spacing: -0.2px;
+  margin-bottom: 12px;
+}
+.mod-menu__tel {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.33em;
+  letter-spacing: -0.6px;
+  margin-bottom: 40px;
+}
+.mod-menu__lang {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.mod-menu__lang-btn {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5em;
+  letter-spacing: -0.2px;
+}
+.mod-menu__lang-btn--active {
+  color: #7E7E82;
+}
