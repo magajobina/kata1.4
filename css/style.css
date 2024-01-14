@@ -137,10 +137,10 @@ body {
   }
 }
 
-button {
+button, a {
   transition: opacity 0.2s;
 }
-button:hover {
+button:hover, a:hover {
   opacity: 0.75;
 }
 
